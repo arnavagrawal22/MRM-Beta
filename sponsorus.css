@@ -1,0 +1,126 @@
+body {
+  background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+}
+
+li {
+  text-align: justify;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.sponsor-row {
+  max-width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (max-width: 900px) {
+  .sponsor-row {
+    max-width: 100%;
+  }
+}
+
+/* !!! NAVBAR !!! */
+.navbar-brand {
+  background-image: url("images/logo_navbar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
+}
+/* !!! Navbar End !!! */
+
+/* !!! TITLE ANIMATION !!! */
+.popout {
+  font-family: Futura, sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 50px;
+}
+@keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffc996;
+    color: black;
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffc996;
+    color: black;
+  }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffc996;
+    color: black;
+  }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffc996;
+    color: black;
+  }
+}
+.popout span {
+  position: relative;
+  display: inline-block;
+  animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popout span:nth-last-child(1n) {
+  animation-delay: -0.1666666667s;
+}
+.popout span:nth-last-child(2n) {
+  animation-delay: -0.3333333333s;
+}
+.popout span:nth-last-child(3n) {
+  animation-delay: -0.5s;
+}
+
+@media (max-width: 971px) {
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 610px) {
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+/* !!! TITLE ANIMATION ENDS !!! */
+/* Background color of top */
+#title {
+  background-color: #583d72;
+}
+
+.section-text {
+  padding: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+}
+.sub-heading {
+  text-align: center;
+  padding-top: 3%;
+  color: #ff6701;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+#sponsorus {
+  text-align: center;
+}

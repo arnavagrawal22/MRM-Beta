@@ -1,0 +1,258 @@
+/* !!! NAVBAR !!! */
+.navbar-brand {
+  background-image: url("images/logo_navbar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
+}
+/* !!! Navbar End !!! */
+
+/* !!! TITLE ANIMATION !!! */
+.popout {
+  font-family: Futura, sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 50px;
+}
+@keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 white;
+    color: black;
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 white;
+    color: black;
+  }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em white;
+    color: black;
+  }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em white;
+    color: black;
+  }
+}
+.popout span {
+  position: relative;
+  display: inline-block;
+  animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popout span:nth-last-child(1n) {
+  animation-delay: -0.1666666667s;
+}
+.popout span:nth-last-child(2n) {
+  animation-delay: -0.3333333333s;
+}
+.popout span:nth-last-child(3n) {
+  animation-delay: -0.5s;
+}
+
+@media (max-width: 971px) {
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 610px) {
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 0px;
+    text-align: center;
+  }
+}
+/* !!! TITLE ANIMATION ENDS !!! */
+/* Background color of top */
+#title {
+  background-color: #583d72;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title-sponsorship {
+    background-color: #fcecdd;
+    padding-top: 2%;
+  }
+  .top {
+    text-align: center;
+  }
+  .title-logo {
+    height: 70px;
+    width: 70px;
+  }
+  .sub-heading {
+    text-align: center;
+    padding-top: 3%;
+    color: #ff6701;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+  .title-nav {
+    padding-left: 3%;
+    padding-right: 4%;
+  }
+  .section-text {
+    padding: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: larger;
+  }
+  #sponsorus {
+    text-align: center;
+  }
+  .brochure {
+    margin-bottom: 5%;
+  }
+  .center-div {
+    margin: auto;
+  }
+  .card-sponsor {
+    margin-top: 5%;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: none;
+    perspective: 1000px;
+    display: inline-block;
+  
+    /* Remove this if you don't want the 3D effect */
+  }
+  .margin-custom {
+    margin: 5%;
+  }
+  .oursponsors {
+    text-align: center;
+  }
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .custom-card {
+    font-size: 20px;
+  }
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(253, 250, 250);
+  
+    color: #000;
+    transform: rotateY(180deg);
+  }
+  .img-sponsor {
+    width: 300px;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+  }
+  .img-special {
+    width: 200px;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+  }
+  .sub-heading1 {
+    text-align: center;
+    padding-top: 3%;
+    color: #ff6701;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0%;
+  }
+  

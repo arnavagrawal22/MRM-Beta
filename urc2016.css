@@ -1,0 +1,274 @@
+/* !!! NAVBAR !!! */
+.navbar-brand {
+  background-image: url("images/logo_navbar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
+}
+/* !!! Navbar End !!! */
+
+/* !!! TITLE ANIMATION !!! */
+.popout {
+  font-family: Futura, sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 50px;
+}
+@keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffc996;
+    color: black;
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffc996;
+    color: black;
+  }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffc996;
+    color: black;
+  }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffc996;
+    color: black;
+  }
+}
+.popout span {
+  position: relative;
+  display: inline-block;
+  animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popout span:nth-last-child(1n) {
+  animation-delay: -0.1666666667s;
+}
+.popout span:nth-last-child(2n) {
+  animation-delay: -0.3333333333s;
+}
+.popout span:nth-last-child(3n) {
+  animation-delay: -0.5s;
+}
+
+@media (max-width: 971px) {
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 610px) {
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+/* !!! TITLE ANIMATION ENDS !!! */
+/* Background color of top */
+#title {
+  background-color: #583d72;
+}
+
+
+
+
+
+
+
+
+
+
+
+table {
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+@media screen and (max-width: 450px) {
+  table {
+    width: 300px;
+  }
+}
+@media (min-width: 450px) and (max-width: 560px) {
+  table {
+    width: 350px;
+  }
+}
+@media (min-width: 560px) and (max-width: 600px) {
+  table {
+    width: 400px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+  table {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  td,
+  th {
+    font-size: 12px;
+    padding: 8px 5px 8px 10px;
+  }
+}
+
+td,
+th {
+  padding: 8px 5px 8px 30px;
+}
+tr:nth-child(even) {
+  background-color: #cddade;
+}
+
+
+
+
+.photo-gallery {
+  height: 55%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+}
+
+
+.section-text {
+  padding: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+}
+
+
+
+.img-rover{
+  width: 30%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-height: 100%;
+  display: block;
+}
+@media (max-width: 900px) {
+  .img-rover{
+    width: 60%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-height: 100%;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.person {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.person-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.linkedin {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.icon{
+    margin-top: 6px;
+}
+.icon:hover {
+  background-color: #007bb6;
+}
+.linkedin:hover {
+  color: #fff;
+  background-color: #007bb6;
+}
+
+.person-name {
+  font-size: 20px;
+}
+.person-designation {
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 500px) {
+  .img-rover{
+    width: 60%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-height: 100%;
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .img-rover{
+    width: 60%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-height: 100%;
+    display: block;
+  }
+} */
